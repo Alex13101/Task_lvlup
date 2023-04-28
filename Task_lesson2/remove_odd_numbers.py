@@ -12,8 +12,6 @@ def remove_odd_numbers(l):
             continue
         else:
             del l[i]
-
-
     return l
 
 
