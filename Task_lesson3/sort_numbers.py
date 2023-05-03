@@ -17,6 +17,7 @@ def timer(func):
         end_time = time.time()
         print(f"Время выполнения: {end_time - start_time:.6f}s")
         return result
+
     return wrapper
 
 @timer
