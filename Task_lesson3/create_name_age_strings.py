@@ -4,7 +4,7 @@
 Мы хотим создать новый список строк, в которых будут указаны имена и возрасты в формате "Имя - возраст".
 Напишите comprehension, который решает эту задачу'''
 
-
+from sort_numbers import timer # импортируем декоратор времени выполнения
 
 def create_name_age_strings(names, ages):
     new_string1 = []
@@ -20,7 +20,7 @@ def create_name_age_strings(names, ages):
 
 
 
-
+@timer # оспользуем декоратор времени выполнения
 def test_create_name_age_strings():
     names = ["Alice", "Bob", "Charlie"]
     ages = [25, 30, 35]
