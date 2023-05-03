@@ -5,18 +5,18 @@
 Напишите comprehension, который решает эту задачу'''
 
 
-new_string1 =[]
-def create_name_age_strings(names, ages):
 
+def create_name_age_strings(names, ages):
+    new_string1 = []
     for i in range(len(names)):
         new_string = f"{names[i]} - {ages[i]}"
         new_string1.append(new_string)
 
     return new_string1
 
-names = ["Alice", "Bob", "Charlie"]
-ages = [25, 30, 35]
-print(create_name_age_strings(names, ages))
+# names = ["Alice", "Bob", "Charlie"]
+# ages = [25, 30, 35]
+# print(create_name_age_strings(names, ages))
 
 
 
@@ -24,7 +24,7 @@ print(create_name_age_strings(names, ages))
 def test_create_name_age_strings():
     names = ["Alice", "Bob", "Charlie"]
     ages = [25, 30, 35]
-    expected = ["Alice - 25", "Bob - 30", "Charlie - 35"]
+    expected = ['Alice - 25', 'Bob - 30', 'Charlie - 35']
     result = create_name_age_strings(names, ages)
     assert result == expected
 
